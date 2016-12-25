@@ -1,0 +1,1 @@
+python app.py -F @xmlfiles.txt -s ./datas -d ./datas2 -S Hi,Girl!
