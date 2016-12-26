@@ -52,8 +52,5 @@ for filename in choices:
     dstfilepath = os.path.join(args.dst, filename+'.json')
     print 'writing', dstfilepath
     with open(dstfilepath, 'w') as f:
-        old = sys.stdout
-        sys.stdout = f
-        print json.dumps(dst)
-        sys.stdout = old
+        f.write(json.dumps(dst))
     print 'success'
